@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type='text/xsl' href='ConversionLog.xslt'?>
+<conversion conversiontitle="Upgrade Report - Atmel Software Framework Upgrade Log" subtitle1="Upgrading Modules From" subtitle2="to" date="Monday, 14 February 2022" time="10:24">
+  <general>
+    <log timestamp="02-14-2022 10-24-51">
+      <message>Unloading project</message>
+    </log>
+    <log timestamp="02-14-2022 10-24-51">
+      <message>Project unload complete.</message>
+    </log>
+    <log timestamp="02-14-2022 10-25-03">
+      <message>Backing up of project started.</message>
+    </log>
+    <log timestamp="02-14-2022 10-25-03">
+      <message>Project backup completed.</message>
+    </log>
+    <log timestamp="02-14-2022 10-25-03">
+      <message>Reloading project after backup.</message>
+    </log>
+    <log timestamp="02-14-2022 10-25-04">
+      <message>Project reload complete.</message>
+    </log>
+    <log timestamp="02-14-2022 10-25-04">
+      <message>Upgrading of project started.</message>
+    </log>
+    <log timestamp="02-14-2022 10-25-27">
+      <message>Project upgrade complete</message>
+    </log>
+  </general>
+  <revert versiontext="3.47.0" description="Reverting from version">
+    <moduleinfo name="Common build items for user board support templates">
+      <action description="Delete framework file 'src\ASF\common\boards\user_board\user_board.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/boards/user_board' from include search path." result="INFO" resulttext="Folder path '../src/ASF/common/boards/user_board' is not present in the include path list 'preprocessingassembler.general.IncludePaths'. Remove Include Path operation cannot be performed." />
+      <action description="Remove defined symbol 'BOARD=USER_BOARD'." result="SUCCESS" resulttext="" />
+      <action description="Remove Assembler Flag '-DBOARD=USER_BOARD'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Common board initialization support enabled">
+      <action description="Delete framework file 'src\ASF\common\boards\user_board\init.c'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Generic board support">
+      <action description="Delete framework file 'src\ASF\common\boards\board.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/boards' from include search path." result="INFO" resulttext="Folder path '../src/ASF/common/boards' is not present in the include path list 'preprocessingassembler.general.IncludePaths'. Remove Include Path operation cannot be performed." />
+    </moduleinfo>
+    <moduleinfo name="MEGA compiler driver">
+      <action description="Delete framework file 'src\ASF\mega\utils\compiler.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\mega\utils\preprocessor\stringz.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\mega\utils\preprocessor\mrepeat.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\mega\utils\progmem.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\mega\utils\status_codes.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\mega\utils\preprocessor\preprocessor.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\mega\utils\preprocessor\tpaste.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\mega\utils\assembler.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\mega\utils\assembler\gas.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/mega/utils/preprocessor' from include search path." result="INFO" resulttext="Folder path '../src/ASF/mega/utils/preprocessor' is not present in the include path list 'preprocessingassembler.general.IncludePaths'. Remove Include Path operation cannot be performed." />
+      <action description="Remove folder '../src/ASF/mega/utils' from include search path." result="INFO" resulttext="Folder path '../src/ASF/mega/utils' is not present in the include path list 'preprocessingassembler.general.IncludePaths'. Remove Include Path operation cannot be performed." />
+    </moduleinfo>
+    <moduleinfo name="Generic Makefile for 8-bit AVR">
+      <action description="Delete framework file 'src\ASF\common\utils\make\Makefile.avr.in'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Interrupt management - megaAVR implementation">
+      <action description="Delete framework file 'src\ASF\common\utils\interrupt.h'." result="SUCCESS" resulttext="" />
+      <action description="Delete framework file 'src\ASF\common\utils\interrupt\interrupt_avr8.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/utils' from include search path." result="INFO" resulttext="Folder path '../src/ASF/common/utils' is not present in the include path list 'preprocessingassembler.general.IncludePaths'. Remove Include Path operation cannot be performed." />
+    </moduleinfo>
+    <moduleinfo name="Part identification macros">
+      <action description="Delete framework file 'src\ASF\common\utils\parts.h'." result="SUCCESS" resulttext="" />
+      <action description="Remove folder '../src/ASF/common/utils' from include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+  </revert>
+  <revert versiontext="3.47.0" description="Reverting from version" />
+  <update versiontext="3.49.1" description="Upgrading to version">
+    <moduleinfo name="Common build items for user board support templates">
+      <action description="Import framework file as 'src\ASF\common\boards\user_board\user_board.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/common/boards/user_board' to include search path." result="SUCCESS" resulttext="" />
+      <action description="Define symbol 'BOARD=USER_BOARD'." result="SUCCESS" resulttext="" />
+      <action description="Add Assembler Flag '-DBOARD=USER_BOARD'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Common board initialization support enabled">
+      <action description="Import framework file as 'src\ASF\common\boards\user_board\init.c'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Generic board support">
+      <action description="Import framework file as 'src\ASF\common\boards\board.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/common/boards' to include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="MEGA compiler driver">
+      <action description="Import framework file as 'src\ASF\mega\utils\compiler.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\mega\utils\preprocessor\stringz.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\mega\utils\preprocessor\mrepeat.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\mega\utils\progmem.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\mega\utils\status_codes.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\mega\utils\preprocessor\preprocessor.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\mega\utils\preprocessor\tpaste.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\mega\utils\assembler.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\mega\utils\assembler\gas.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/mega/utils/preprocessor' to include search path." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/mega/utils' to include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Generic Makefile for 8-bit AVR">
+      <action description="Import framework file as 'src\ASF\common\utils\make\Makefile.avr.in'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Interrupt management - megaAVR implementation">
+      <action description="Import framework file as 'src\ASF\common\utils\interrupt.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\utils\interrupt\interrupt_avr8.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/common/utils' to include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Part identification macros">
+      <action description="Import framework file as 'src\ASF\common\utils\parts.h'." result="SUCCESS" resulttext="" />
+      <action description="Add folder '../src/ASF/common/utils' to include search path." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+  </update>
+  <update versiontext="3.49.1" description="Upgrading to version">
+    <moduleinfo name="Generic board support">
+      <action description="Import framework file as 'src\ASF\common\boards\board.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Generic Makefile for 8-bit AVR">
+      <action description="Import framework file as 'src\ASF\common\utils\make\Makefile.avr.in'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="CPU specific features">
+      <action description="Import framework file as 'src\ASF\mega\drivers\cpu\mega_reset_cause.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="System Clock Control - MEGA RF A1 implementation">
+      <action description="Import framework file as 'src\ASF\common\services\clock\mega\sysclk.c'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\clock\mega\sysclk.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\clock\sysclk.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\Config\conf_clock.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Delay routines">
+      <action description="Import framework file as 'src\ASF\common\services\delay\mega\cycle_counter.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\delay\delay.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="GPIO - General purpose Input/Output">
+      <action description="Import framework file as 'src\ASF\common\services\gpio\gpio.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\gpio\mega_gpio\mega_gpio.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="IOPORT - General purpose I/O service">
+      <action description="Import framework file as 'src\ASF\common\services\ioport\ioport.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\services\ioport\mega\ioport.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Interrupt management - megaAVR implementation">
+      <action description="Import framework file as 'src\ASF\common\utils\interrupt.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\common\utils\interrupt\interrupt_avr8.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="Part identification macros">
+      <action description="Import framework file as 'src\ASF\common\utils\parts.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+    <moduleinfo name="MEGA compiler driver">
+      <action description="Import framework file as 'src\ASF\mega\utils\compiler.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\mega\utils\preprocessor\stringz.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\mega\utils\preprocessor\mrepeat.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\mega\utils\progmem.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\mega\utils\status_codes.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\mega\utils\preprocessor\preprocessor.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\mega\utils\preprocessor\tpaste.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\mega\utils\assembler.h'." result="SUCCESS" resulttext="" />
+      <action description="Import framework file as 'src\ASF\mega\utils\assembler\gas.h'." result="SUCCESS" resulttext="" />
+    </moduleinfo>
+  </update>
+</conversion>
