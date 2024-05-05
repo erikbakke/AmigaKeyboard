@@ -1,0 +1,62 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid 9538e4ed-27e6-4c37-b989-9859dc0d49e8)
+
+  (paper "A4")
+
+  (title_block
+    (date "2022-01-08")
+  )
+
+  (lib_symbols
+  )
+
+
+  (text "Generic Amiga keyboard that\ncan be configured for A500 or\nA2000/A4000 output"
+    (at 179.07 179.07 0)
+    (effects (font (size 2.54 2.54) italic) (justify left bottom))
+    (uuid 1b62a16a-0741-4a01-9b30-71a73a5e9419)
+  )
+  (text "Amiga keyboard - Generic" (at 186.69 191.77 0)
+    (effects (font (size 2.54 2.54)) (justify left bottom))
+    (uuid ca099dbc-569b-4f41-bf2b-7fd5a230ebfd)
+  )
+
+  (sheet (at 54.61 88.9) (size 54.61 29.21) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 50952a23-fa89-4144-a3b0-4626ad5d9e9e)
+    (property "Sheetname" "Keyboard controller" (at 54.61 88.1884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Keyboard_controller.kicad_sch" (at 54.61 118.6946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "AmigaKeyboard"
+        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 81.28 157.48) (size 43.18 25.4) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid e86f0ecb-475e-407a-8c97-f6d7df8c3ce8)
+    (property "Sheetname" "Keyboard matrix" (at 81.28 156.7684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Keyboard_Matrix.kicad_sch" (at 81.28 183.4646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "AmigaKeyboard"
+        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8" (page "2"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
