@@ -8,3 +8,5 @@ The A600 and A1200 have the keyboard controller on the motherboard, and are not 
 There are further notes in the Firmware and PCB folders, relevant to those parts of the project.
 
 It should be noted that this is an early design, but I have built a keyboard up from scratch with this PCB and firmware and it is working on my A4000.
+The design is not yet designed to fit into existing Amiga keyboard cases or as a 1:1 replacement for an A500 keyboard.  In order to achieve this, the mounting holes need to be adjusted to fit the external keyboard cases, and most likely a switch mounting plate will also be required.
+To avoid disappointment, please keep this in mind before ordering PCBs from this design.
